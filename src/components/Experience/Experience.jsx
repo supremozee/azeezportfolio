@@ -1,53 +1,30 @@
-import React from "react";
+import React, { useContext } from "react";
+import { themeContext } from "../../Context";
+import "./Experience.css";
+const Experience = () => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
 
-import styles from "./Experience.module.css";
-import skills from "../../data/skills.json";
-import history from "../../data/history.json";
-import { getImageUrl } from "../../utils";
-
-export const Experience = () => {
   return (
-    <section className={styles.container} id="experience">
-      <h2 className={styles.title}>Experience</h2>
-      <div className={styles.content}>
-        <div className={styles.skills}>
-          {skills.map((skill, id) => {
-            return (
-              <div key={id} className={styles.skill}>
-                <div className={styles.skillImageContainer}>
-                  <img src={getImageUrl(skill.imageSrc)} alt={skill.title} />
-                </div>
-                <p>{skill.title}</p>
-              </div>
-            );
-          })}
-        </div>
-        <ul className={styles.history}>
-          {history.map((historyItem, id) => {
-            return (
-              <li key={id} className={styles.historyItem}>
-                <img
-                  src={getImageUrl(historyItem.imageSrc)}
-                  width={50}
-                  height={50}
-                  style={{objectFit: 'cover'}}
-                  alt={`${historyItem.organisation} Logo`}
-                />
-                <div className={styles.historyItemDetails}>
-                  <strong style={{fontSize: '23px'}}>{`${historyItem.role}`}</strong>
-                  <h3 style={{fontSize: '17px'}}>{`${historyItem.organisation}`}</h3>
-                  <p>{`${historyItem.startDate} - ${historyItem.endDate}`}</p>
-                  <ul>
-                    {historyItem.experiences.map((experience, id) => {
-                      return <li key={id} style={{fontSize: '15px', padding: '10px'}}>{experience}</li>;
-                    })}
-                  </ul>
-                </div>
-              </li>
-            );
-          })}
-        </ul>
+    <div className="experience" id='experience'>
+      <div className="achievement">
+        {/* darkMode */}
+        <div className="circle" style={{color: darkMode?'var(--orange)':''}}>4+</div>
+        <span  style={{color: darkMode?'white':''}}>years </span>
+        <span>Experience</span>
       </div>
-    </section>
+      <div className="achievement">
+        <div className="circle" style={{color: darkMode?'var(--orange)':''}}>4+</div>
+        <span  style={{color: darkMode?'white':''}}>completed </span>
+        <span>Projects</span>
+      </div>
+      <div className="achievement">
+        <div className="circle" style={{color: darkMode?'var(--orange)':''}}>3+</div>
+        <span  style={{color: darkMode?'white':''}}>companies </span>
+        <span>Work</span>
+      </div>
+    </div>
   );
 };
+
+export default Experience;
