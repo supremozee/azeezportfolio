@@ -1,0 +1,36 @@
+[
+  {
+    "role": " Full Stack Engineer",
+    "organisation": "Kasia Food Scheduling Application",
+    "startDate": "Sept, 2023",
+    "endDate": "Present",
+    "experiences": ["Leading modern, responsive e-commerce frontend with TypeScript, Next.js.", "Active code reviewer, enforcing standards and best practices", 
+    "Collaborative integration for optimized performance"],
+    "imageSrc": "history/Logo.png"
+  },
+  {
+    "role": "Web Development Trainer",
+    "organisation": "Self Employed",
+    "startDate": "Aug, 2021",
+    "endDate": "Present",
+    "experiences": ["Conducting advanced and highly rated web development training for individuals and groups",
+     "Covering topics including HTML, CSS, JavaScript, TypeScript, Tailwind CSS, Sass and React JS", 
+     "Providing hands-on projects to enhance practical skills", "Utilizing interactive coding sessions, real-world projects and collaborative learning environments"],
+    "imageSrc": "skills/train.avif"
+  },
+  {
+    "role": " Full Stack Engineer",
+    "organisation": "Personal Project/ Votify",
+    "startDate": "Apr, 2020",
+    "endDate": "Present",
+    "experiences": [
+      "Developed and currently managing real-time voting application",
+      "Built votify project from scratch using TypeScript, Next.js, Tailwind CSS, Sass, Node.js, Express, MongoDB, Socket.io, and more",
+      "Integrated JWT, Mongo Atlas, bCrypt frameworks for authentication and persistent",
+      "• Utilized Redux for state management and protected cookies for security.",
+      " Ensured code quality, maintainability and scalability by using TypeScript, ESLint, Prettier and other tools",
+      "Deployed the application to Vercel and Heroku platforms"
+    ],
+    "imageSrc": "history/Ts.png"
+  }
+]

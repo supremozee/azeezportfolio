@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Votify",
+    "imageSrc": "projects/project.png",
+    "description": "seamless voting Application",
+    "skills": ["React", "Next", "Express", "Node", "Sass", "Typescript"],
+    "demo": "https://votify.onrender.com/",
+    "source": "https://github.com/JemilCodes/votifyClient"
+  },
+  {
+    "title": "Kasia",
+    "imageSrc": "projects/project.png",
+    "description": "Kasia food scheduling App",
+    "skills": ["React", "Next", "Express", "Node", "Sass", "Typescript"],
+    "demo": "https://www.example.com",
+    "source": "https://github.com/ShoboySnr/kasia-frontend/tree/kasia-testing"
+  }
+]
